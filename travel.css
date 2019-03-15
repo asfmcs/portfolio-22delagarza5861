@@ -1,0 +1,34 @@
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Martel', serif;
+  text-align: center;
+}
+.list {
+  background-color:brown;
+text-align: center;
+}
+
+#list2 {
+  background-color: brown;
+text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%
+}
+
+body {
+  background-image: url("http://www.seekgif.com/uploads/red-wallpapers-abstract-5.png");
+
+}

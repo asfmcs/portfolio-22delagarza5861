@@ -1,0 +1,59 @@
+h1 {
+  font-family: 'Martel', serif;
+  text-align: center;
+  font-size: 50px;
+}
+h2 {
+  font-family: 'Martel', serif;
+  text-align: center;
+  font-size: 30px;
+}
+h3 {
+  font-family: 'Martel', serif;
+  text-align: center;
+  font-size: 30px;
+}
+/* I got the fonts from googlefonts */
+h4 {
+  font-family: 'Martel', serif;
+  text-align: center;
+  font-size: 25px;
+}
+table {
+  font-family: 'Martel', serif;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 3px solid plum;
+  font-size: 30px;
+}
+
+.table, th, td {
+  border: 3px solid papayawhip;
+  
+}
+ol {
+  font-family: 'Martel', serif;
+  font-size: 30px;
+}
+
+th {
+  background-color: rgba(173, 5, 123, 0.37);
+  color: white;
+}
+
+body {
+  background-color: rgba(255, 192, 203, .04);
+}
+/* This is for the table with a pic beside it */
+tr a{
+  color:#FFF;
+}
+
+tr a:hover {
+  color:#FFF;
+}
+img {
+  float: right;
+}

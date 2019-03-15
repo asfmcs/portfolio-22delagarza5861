@@ -1,0 +1,70 @@
+/* text shadow  is  new CSS text I reasearched for */
+h1 {
+font-family:Serif;
+text-align: center;
+font-size: 3.5em;
+  text-shadow: 3px 2px greenyellow;
+
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+h2 {
+font-family:Serif;
+font-size: 2em;
+}
+
+h3 {
+font-family:Serif;
+text-align: center;
+font-size: 2.5em;
+}
+
+
+/* word spacing is  new CSS text I reasearched for */
+p {
+font-family:Serif;
+line-height: 1.5 em;
+font-size: 1.5em;
+  word-spacing: 10px;
+}
+
+table {
+font-family:Serif;
+text-align: center;
+font-size: 1.5em;
+
+}
+
+body {
+  background-image: url("https://hdwallpapersstores.com/wp-content/uploads/2018/09/The-art-of-coding-wallpaper-1200x480.jpg");
+
+color: rgba(255, 255, 255, 255); 
+}
+
+/* These are the new CSS I got for images called image dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #140303;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+

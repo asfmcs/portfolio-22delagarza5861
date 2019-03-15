@@ -1,0 +1,40 @@
+h1 {
+  text-align: center
+}
+  .pinky { 
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    }
+
+body {
+  background-image: url("https://img.freepik.com/free-photo/high-angle-view-shiny-silver-colored-glitter-background_23-2147878576.jpg?size=626&ext=jpg");
+  margin: 100px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+}
+
+h4 {
+font-weight: unset;
+
+}
+
+
+#info {
+text-align: center;
+
+}
+
+#top {
+text-align: center;
+}
+
+#bottom {
+text-align: center;
+}
+
+
+img {
+height:100px;
+margin-bottom: 4px;
+
+}

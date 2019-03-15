@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Amatic SC', cursive;
+}
+
+body {
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: powderblue;
+  text-align: center;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color:whitesmoke;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  background-color:thistle;
+  padding: 10px;
+  height: 800px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+  background-color:powderblue;
+  padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  padding: 5px;
+}
+
+.grid-container > div {
+  background-color:whitesmoke;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
