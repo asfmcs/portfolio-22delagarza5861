@@ -1,0 +1,252 @@
+
+<html>
+<head>
+<title>Maze</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://static.codehs.com/gulp/a818e45667427600634e9e44b17902f1a5d48243/chs-js-lib/chs.js"></script>
+
+
+<style>
+canvas {
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+
+pre {
+    border: 1px solid black;
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    background-color: #F5F5F5;
+}
+</style>
+
+</head>
+
+<body>
+<h1>Maze</h1>
+
+
+
+<canvas
+width="400"
+height="500"
+class="codehs-editor-canvas"></canvas>
+<pre id="console"></pre>
+
+<script>
+window.onload = function() {
+
+    function start(){
+
+    drawBack( 0, 0,  Color.black, 0, 0 );
+    var centerX = getWidth()/2;
+    var centerY = getHeight()/2;
+    
+    drawPacman(150,60 );
+    drawBlack(210,230,  Color.black);
+    drawBlack(200,80,  Color.yellow);
+    drawBlack(200,30,  Color.yellow);
+    drawBlack(200,130,  Color.yellow);
+    drawBlack(200,180,  Color.yellow);
+    drawBlack(150,130,  Color.yellow);
+    drawBlack(100,130,  Color.yellow);
+    drawBlack(50,130,  Color.yellow);
+    drawBlack(0,130,  Color.yellow);
+    drawBlack(250,130,  Color.yellow);
+    drawBlack(300,130,  Color.yellow);
+    drawBlack(350,130,  Color.yellow);
+     drawBlack(400,130,  Color.yellow);
+    
+    var centerX = getWidth()/2;
+    var centerY = getHeight()/2;
+    var pink= "#FF69B4";
+    
+    //top left//
+    verticalLine(60, 90, 60, 0);
+    verticalLine(50, 80, 50, 0);   
+    verticalLine(60, 90, 0, 90);
+    verticalLine(50, 80, 0, 80);
+    
+     verticalLine(120, 90, 120, 0);
+    verticalLine(100, 90, 100, 0);
+    verticalLine(100, 90, 120, 90);
+    
+    //top right// 
+    verticalLine(340, 90, 340, 0);
+    verticalLine(350, 80, 350, 0);   
+    verticalLine(340, 90, 400, 90);
+    verticalLine(350, 80, 400, 80);
+    
+     verticalLine(280, 90, 280, 0);
+    verticalLine(300, 90, 300, 0);
+    verticalLine(300, 90, 280, 90);
+    
+    // center left//
+    
+    verticalLine(60, 300, 60, 150);
+    verticalLine(50, 290, 50, 160);   
+    verticalLine(60, 150, 0, 150);
+    verticalLine(50, 290, 0, 290);
+    verticalLine(60, 300, 0, 300);
+    verticalLine(50, 160, 0, 160);
+    
+    
+    verticalLine(120, 300, 120, 150);
+    verticalLine(100, 300, 100, 150);
+    verticalLine(100, 150, 120, 150);
+    verticalLine(100, 300, 120, 300);
+    
+    //center right// 
+    
+    verticalLine(340, 300, 340, 150);
+    verticalLine(350, 290, 350, 160);   
+    verticalLine(340, 150, 400, 150);
+    verticalLine(350, 290, 400, 290);
+    verticalLine(340, 300, 400, 300);
+    verticalLine(350, 160, 400, 160);
+    
+     verticalLine(280, 150, 280, 300);
+    verticalLine(300, 150, 300, 300);
+    verticalLine(300, 300, 280, 300);
+    verticalLine(300, 150, 280, 150);
+    
+    //bottom// 
+    verticalLine(60, 490, 60, 470);
+    verticalLine(60, 470, 0, 470);
+    
+    verticalLine(340, 490, 340, 470);
+    verticalLine(340, 470, 400, 470);
+    
+    verticalLine(100, 490, 100, 470);
+    verticalLine(100, 470, 180, 470);
+    verticalLine(180, 490, 180, 470);
+    
+     verticalLine(300, 490, 300, 470);
+    verticalLine(300, 470, 220, 470);
+    verticalLine(220, 490, 220, 470);
+    
+    //center//
+    
+    verticalLine(50, 330, 350, 330);
+    verticalLine(50, 440, 350, 440);
+    verticalLine(50, 440, 50, 330);
+    verticalLine(350, 440, 350, 330);
+    
+    verticalLine(60, 340, 340, 340);
+    verticalLine(60, 430, 340, 430);
+    verticalLine(60, 430, 60, 340);
+    verticalLine(340, 430, 340, 340);
+    
+     var centerX = getWidth()/2;
+    var centerY = getHeight()/2;
+    drawGhost(140, 370, Color.red);
+    drawGhost(190,370, Color.green);
+    drawGhost(90, 370, pink);
+    drawGhost(240, 370, Color.cyan);
+    
+}
+
+
+function drawBack(width, height, color, x, y ){
+	var rect = new Rectangle(400, 500);
+	rect.setColor(color);
+	rect.setPosition(x, y );
+	add(rect);
+
+}
+
+function drawRect(width, height, color, x, y ){
+	var rect = new Rectangle(40, 30);
+	rect.setColor(color);
+	rect.setPosition(x, y );
+	add(rect);
+}
+
+function drawPacman(x, y ){
+	var circle = new Circle(15);
+	circle.setColor(Color.black);
+	circle.setPosition(x, y);
+	add(circle);
+	
+	var myArc = new Arc(40, 30, 340, 0);
+    myArc.setPosition(200, 250);
+    myArc.setColor(Color.yellow);
+    add(myArc);
+}
+
+function verticalLine (x1, y1, x2, y2 ) {
+    var line = new Line (x1, y1, x2, y2);
+    line.setColor(Color.blue);
+    add(line);
+}
+
+
+function drawBlack(x, y, color ){
+	var circle = new Circle(7);
+	circle.setColor(color);
+	circle.setPosition(x, y);
+	add(circle);
+}
+
+function drawGhost(centerX, centerY, color){
+    
+	var circle = new Circle(20);
+	circle.setColor(color);
+	circle.setPosition(centerX, centerY);
+	add(circle);
+	
+	var rect = new Rectangle(40, 40);
+	rect.setColor(color);
+	rect.setPosition(centerX-20, centerY );
+	add(rect);
+
+	var circle1 = new Circle(7);
+	circle1.setColor(color);
+	circle1.setPosition(centerX + 13 , centerY + 40);
+	add(circle1);
+
+	var circle2 = new Circle(7);
+	circle2.setColor(color);
+	circle2.setPosition(centerX, centerY + 40);
+	add(circle2);
+
+	var circle3 = new Circle(7);
+	circle3.setColor(color);
+	circle3.setPosition(centerX - 13, centerY +40);
+	add(circle3);
+
+	var eye1 = new Circle(5.5);
+	eye1.setColor(Color.white);
+	eye1.setPosition(centerX-8.5, centerY);
+	add(eye1);
+
+	var eye2 = new Circle(5.5);
+	eye2.setColor(Color.white);
+	eye2.setPosition(centerX + 8.5, centerY);
+	add(eye2);
+
+	var minieye1 = new Circle(2.5);
+	minieye1.setColor(Color.blue);
+	minieye1.setPosition(centerX-5.5, centerY);
+	add(minieye1);
+
+	var minieye2 = new Circle(2.5);
+	minieye2.setColor(Color.blue);
+	minieye2.setPosition(centerX + 11.5, centerY);
+	add(minieye2);
+
+}
+
+
+    if (typeof start === 'function') {
+        start();
+    }
+};
+</script>
+
+</body>
+</html>
