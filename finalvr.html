@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+        <a-plane position="0 0 -10" rotation="0 0 0" width="40" height="20" src="https://codehs.com/uploads/0a8f1f131365ec3da8b201617b7b550d"></a-plane>
+              <a-plane position="-0.345 -2.003 -9.758" rotation="-90 0 0" width="30" height="100" color="gray"></a-plane>
+              
+              <a-camera>
+                <a-cursor fuse="true" fuse-timeout="1"></a-cursor>
+            </a-camera>
+        
+       <a-cone static-body
+                position="9.901 0.736 -8.176"
+                width="4"
+                radius-bottom="2" 
+                radius-top="3"
+                rotation="20 0 -20"
+                color="purple">
+            </a-cone>
+
+             
+        <a-sphere dynamic-body
+        position="9.681 6.557 -7.918" 
+        src="https://codehs.com/uploads/9281af41e227e13201554115ffcdc5d7"
+                    height="5" width="2" depth="1">
+                <a-animation
+                    attribute="position"
+                    from="9.681 6.557 -7.918"
+                    to="9.681 2.4 -7.918"
+                    dur="1000"
+                    repeat="indefinite"
+                    direction="alternate"
+                > </a-animation> 
+            </a-sphere>
+
+
+        <a-cone color="white" 
+        radius-bottom="1" 
+        radius-top="2" 
+        position="0 0 -5"
+        height="4">
+        </a-cone>
+        
+        <a-cone color="blue" 
+        radius-bottom=".5" 
+        radius-top="1.5" 
+        position="0 .5 -4"
+        height="2">
+                <a-animation
+                    attribute="height"
+                    from="2"
+                    to="3"
+                    begin="click"
+                ></a-animation>
+            
+            <a-sphere src="https://codehs.com/uploads/eb45fabf06b2016fa204a4de9797091b"
+                radius="0.5" position="-3 -2 -3">
+            <a-animation
+                    attribute="position"
+                    from="-3 -2 -3"
+                    to="12 -2 -3"
+                    direction="alternate"
+                    repeat="indefinite"
+                    dur="2000"
+                >
+                </a-animation>
+                
+            </a-sphere>
+            <a-sphere src="https://codehs.com/uploads/eb45fabf06b2016fa204a4de9797091b"
+                radius="0.5" position="-6 -2 -3">
+            <a-animation
+                    attribute="position"
+                    from="-6 -2 -3"
+                    to="10 -2 -3"
+                    direction="alternate"
+                    repeat="indefinite"
+                    dur="2000"
+                 
+                >
+                </a-animation>
+                
+            </a-sphere>
+        
+            <a-sphere src="https://codehs.com/uploads/eb45fabf06b2016fa204a4de9797091b"
+                radius="0.5" position="-9 -2 -3">
+            <a-animation
+                    attribute="position"
+                    from="-9 -2 -3"
+                    to="8 -2 -3"
+                    direction="alternate"
+                    repeat="indefinite"
+                    dur="2000"
+                
+                >
+                </a-animation>
+                    
+                </a-sphere>
+
+
+        </a-scene>
+    </body>
+</html>
