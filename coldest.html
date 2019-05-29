@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Earth’s Coldest Location</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://static.codehs.com/gulp/a818e45667427600634e9e44b17902f1a5d48243/chs-js-lib/chs.js"></script>
+
+
+<style>
+canvas {
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+
+pre {
+    border: 1px solid black;
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    background-color: #F5F5F5;
+}
+</style>
+
+</head>
+
+<body>
+<h1>Earth’s Coldest Location</h1>
+
+
+
+<canvas
+width="400"
+height="500"
+class="codehs-editor-canvas"></canvas>
+<pre id="console"></pre>
+
+<script>
+window.onload = function() {
+
+    var CELSUIS_TO_FAHRENHEIT = 32;
+function start(){
+	println("This program converts Celsisu to Fahrenheit.");
+	var temp = readFloat("Celsisus? ");
+	
+	var ftemp = (temp * 9/5) + CELSUIS_TO_FAHRENHEIT;
+	
+	println("Fahrenheit: " + ftemp );
+}
+
+
+    if (typeof start === 'function') {
+        start();
+    }
+};
+</script>
+
+</body>
+</html>
