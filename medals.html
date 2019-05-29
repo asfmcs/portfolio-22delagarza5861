@@ -1,0 +1,303 @@
+
+<html>
+<head>
+<title>Gold Medal for Outstandin</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://static.codehs.com/gulp/a818e45667427600634e9e44b17902f1a5d48243/chs-js-lib/chs.js"></script>
+
+
+<style>
+canvas {
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+
+pre {
+    border: 1px solid black;
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    background-color: #F5F5F5;
+}
+</style>
+
+</head>
+
+<body>
+<h1>Gold Medal for Outstandin</h1>
+
+
+
+<canvas
+width="400"
+height="500"
+class="codehs-editor-canvas"></canvas>
+<pre id="console"></pre>
+
+<script>
+window.onload = function() {
+
+    function start () {
+    
+var LEFT_RADIUS = 60;
+var MID_RADIUS = 65;
+var RIGHT_RADIUS = 60;
+var OLY_RADIUS = 10;
+var OLYM_RADIUS = 7;
+var gold = new Color(212, 175, 55);
+var gold2 = new Color(215, 185, 60);
+var silver = new Color(211,211,211);
+var silver2 = new Color(216,221,216);
+var bronze = new Color(139,69,19);
+var bronze2 = new Color(145,72,29);
+var blue = new Color(0,255,255);
+var pink = new Color(255,204,229);
+
+
+ var bcircle = new Circle (LEFT_RADIUS);
+ bcircle.setPosition (70,195);
+ bcircle.setColor (gold);
+ add(bcircle);
+ 
+ var line = new Line(100, 245, 12, 185);
+line.setColor(gold2);
+line.setLineWidth(10);
+add(line);
+var line = new Line(125, 180, 50, 143);
+line.setColor(gold2);
+line.setLineWidth(10);
+add(line);
+var line = new Line(125, 220, 20, 170);
+line.setColor(gold2);
+line.setLineWidth(10);
+add(line);
+
+var bcircle = new Circle (OLY_RADIUS);
+ bcircle.setPosition (50,180);
+ bcircle.setColor (gold2);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLYM_RADIUS);
+ bcircle.setPosition (50,180);
+ bcircle.setColor (gold);
+ add(bcircle);
+ 
+var bcircle = new Circle (OLY_RADIUS);
+ bcircle.setPosition (65,180);
+ bcircle.setColor (gold2);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLYM_RADIUS);
+ bcircle.setPosition (65,180);
+ bcircle.setColor (gold);
+ add(bcircle);
+ 
+var bcircle = new Circle (OLY_RADIUS);
+ bcircle.setPosition (80,180);
+ bcircle.setColor (gold2);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLYM_RADIUS);
+ bcircle.setPosition (80,180);
+ bcircle.setColor (gold);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLY_RADIUS);
+ bcircle.setPosition (55,195);
+ bcircle.setColor (gold2);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLYM_RADIUS);
+ bcircle.setPosition (55,195);
+ bcircle.setColor (gold);
+ add(bcircle);
+ 
+var bcircle = new Circle (OLY_RADIUS);
+ bcircle.setPosition (75,195);
+ bcircle.setColor (gold2);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLYM_RADIUS);
+ bcircle.setPosition (75,195);
+ bcircle.setColor (gold);
+ add(bcircle);
+ 
+
+ var mcircle = new Circle (MID_RADIUS);
+ mcircle.setPosition (200,195);
+ mcircle.setColor (silver);
+ add(mcircle);
+ 
+ var line = new Line(240, 245, 140, 185);
+line.setColor(silver2);
+line.setLineWidth(10);
+add(line);
+var line = new Line(265, 190, 160, 143);
+line.setColor(silver2);
+line.setLineWidth(10);
+add(line);
+var line = new Line(255, 220, 140, 170);
+line.setColor(silver2);
+line.setLineWidth(10);
+add(line);
+
+var bcircle = new Circle (OLY_RADIUS);
+ bcircle.setPosition (170,180);
+ bcircle.setColor (silver2);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLYM_RADIUS);
+ bcircle.setPosition (170,180);
+ bcircle.setColor (silver);
+ add(bcircle);
+ 
+var bcircle = new Circle (OLY_RADIUS);
+ bcircle.setPosition (185,180);
+ bcircle.setColor (silver2);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLYM_RADIUS);
+ bcircle.setPosition (185,180);
+ bcircle.setColor (silver);
+ add(bcircle);
+ 
+var bcircle = new Circle (OLY_RADIUS);
+ bcircle.setPosition (200,180);
+ bcircle.setColor (silver2);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLYM_RADIUS);
+ bcircle.setPosition (200,180);
+ bcircle.setColor (silver);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLY_RADIUS);
+ bcircle.setPosition (180,195);
+ bcircle.setColor (silver2);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLYM_RADIUS);
+ bcircle.setPosition (180,195);
+ bcircle.setColor (silver);
+ add(bcircle);
+ 
+var bcircle = new Circle (OLY_RADIUS);
+ bcircle.setPosition (195,195);
+ bcircle.setColor (silver2);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLYM_RADIUS);
+ bcircle.setPosition (195,195);
+ bcircle.setColor (silver);
+ add(bcircle);
+ 
+ 
+ var tcircle = new Circle (RIGHT_RADIUS);
+ tcircle.setPosition (329,195);
+ tcircle.setColor (bronze);
+ add(tcircle);
+ 
+ var line = new Line(360, 245, 270, 185);
+line.setColor(bronze2);
+line.setLineWidth(10);
+add(line);
+var line = new Line(385, 190, 300, 143);
+line.setColor(bronze2);
+line.setLineWidth(10);
+add(line);
+var line = new Line(375, 220, 280, 170);
+line.setColor(bronze2);
+line.setLineWidth(10);
+add(line);
+
+var bcircle = new Circle (OLY_RADIUS);
+ bcircle.setPosition (310,180);
+ bcircle.setColor (bronze2);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLYM_RADIUS);
+ bcircle.setPosition (310,180);
+ bcircle.setColor (bronze);
+ add(bcircle);
+ 
+var bcircle = new Circle (OLY_RADIUS);
+ bcircle.setPosition (330,180);
+ bcircle.setColor (bronze2);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLYM_RADIUS);
+ bcircle.setPosition (330,180);
+ bcircle.setColor (bronze);
+ add(bcircle);
+ 
+var bcircle = new Circle (OLY_RADIUS);
+ bcircle.setPosition (345,180);
+ bcircle.setColor (bronze2);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLYM_RADIUS);
+ bcircle.setPosition (345,180);
+ bcircle.setColor (bronze);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLY_RADIUS);
+ bcircle.setPosition (340,195);
+ bcircle.setColor (bronze2);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLYM_RADIUS);
+ bcircle.setPosition (340,195);
+ bcircle.setColor (bronze);
+ add(bcircle);
+ 
+var bcircle = new Circle (OLY_RADIUS);
+ bcircle.setPosition (320,195);
+ bcircle.setColor (bronze2);
+ add(bcircle);
+ 
+ var bcircle = new Circle (OLYM_RADIUS);
+ bcircle.setPosition (320,195);
+ bcircle.setColor (bronze);
+ add(bcircle);
+ 
+var rect = new Rectangle(30, 131);
+rect.setPosition(60, 5);
+rect.setColor (pink);
+add(rect);
+var rect = new Rectangle(30, 131);
+rect.setPosition(55, 5);
+rect.setColor (blue);
+add(rect);
+
+var rect = new Rectangle(30, 130);
+rect.setPosition(190, 5);
+rect.setColor (pink);
+add(rect);
+var rect = new Rectangle(30, 130);
+rect.setPosition(183, 5);
+rect.setColor (blue);
+add(rect);
+
+var rect = new Rectangle(30, 131);
+rect.setPosition(320, 5);
+rect.setColor (pink);
+add(rect);
+var rect = new Rectangle(30, 131);
+rect.setPosition(314, 5);
+rect.setColor (blue);
+add(rect);
+
+}
+
+
+    if (typeof start === 'function') {
+        start();
+    }
+};
+</script>
+
+</body>
+</html>
